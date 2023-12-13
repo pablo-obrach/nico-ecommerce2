@@ -9,6 +9,7 @@ import card1 from '../../assets/imagenes/main/filtro1.jpg'
 import card2 from '../../assets/imagenes/main/filtro2.jpg'
 import card3 from '../../assets/imagenes/main/filtro3.jpg'
 import styles from './Main.module.css'
+import { Link } from 'react-router-dom'
 
 const Main = () => {
   return (
@@ -26,6 +27,9 @@ const Main = () => {
               <img className={styles.imgB} src={headPhone3} alt='headPhone3' />
             </div>
           </div>
+          <Link to={'/test'}>
+            <h2>test</h2>
+          </Link>
         </article>
         <article>
           <div className={styles.cardsContainer}>

@@ -1,8 +1,8 @@
 import Main from './componets/main/main'
 import Tienda from './componets/tienda/Tienda'
+import Test from './componets/sections/Test'
 import WirelessHeadphones from './componets/sections/WirelessHeadphones'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-// import CartContext from './context/CartContext'
 import CartData from './context/CartData'
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
             <Route path='/' element={<Main />} />
             <Route path='/tienda' element={<Tienda />} />
             <Route path='/wirelessHeadphone' element={<WirelessHeadphones />} />
+            <Route path='/test' element={<Test />} />
           </Routes>
         </CartData>
       </BrowserRouter>

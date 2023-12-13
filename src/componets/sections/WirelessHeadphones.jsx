@@ -1,4 +1,11 @@
 import { useEffect, useState } from 'react'
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  query,
+  where,
+} from 'firebase/firestore'
 import Products from '../products/Products'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
@@ -9,9 +16,18 @@ const WirelessHeadphones = () => {
   const [wirelessHeadphones, setWirelessHeadphones] = useState(null)
 
   useEffect(() => {
-    fetch('src/Mock/products.json')
-      .then((res) => res.json())
-      .then((data) => setWirelessHeadphones(data))
+    const db = getFirestore()
+
+    const q = query(collection(db, 'items'), where('label', '==', 'headset'))
+    getDocs(q).then((snapshot) => {
+      if (!snapshot.empty) {
+        setWirelessHeadphones(
+          snapshot.docs.map((doc) => {
+            return { id: doc.id, ...doc.data() }
+          }),
+        )
+      }
+    })
   }, [])
 
   return (
