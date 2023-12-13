@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Cassette Wireless On-Ear Headphones",
+    "description": "Inspirado en los diseños clásicos de los años 80 y 90, Cassette presenta estilo, comodidad, durabilidad y calidad de sonido mucho más allá de su precio.",
+    "price": 10000,
+    "quantity": 5,
+    "image" : "src/assets/imagenes/productos/wireless-headphones/1.jpg"	
+  },
+  {
+    "id": 2,
+    "name": "Crusher ANC 2 Sensory Bass",
+    "description": "Control de voz Skull-IQ. Cancelación activa de ruido ajustable de 4 micrófonos. Bajo sensorial ajustable,Audio sintonizado para tipos de música. Tecnología de micrófono avanzada. Emparejar con múltiples dispositivos. Sonido superior y sin límites. Cómodos y prácticos.Tamaño del altavoz: 40mm.50 horas de batería",
+    "price": 10000,
+    "quantity": 5,
+    "image" : "src/assets/imagenes/productos/wireless-headphones/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Crusher Evo Wireless Over-Ear",
+    "description": "Crusher™ Evo cuenta con Personal Sound de Audiodo™, que es una tecnología única que analiza la forma en que escuchas y ajusta tu música en tiempo real para que puedas escuchar tu música de la mejor forma posible.¡Podrás escuchar cosas que nunca antes habías oído en tus canciones favoritas!",
+    "price": 100,
+    "quantity": 10,
+    "image" : "src/assets/imagenes/productos/wireless-headphones/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Crusher Wireless Over-Ear",
+    "description": "El Crusher Wireless cuenta con potentes graves hápticos de canal dual. Además, su batería recargable de hasta 40 horas de duración te permitirá disfrutar de días y días de escucha mediante Bluetooth® inalámbrico sin necesidad de cables.",
+    "price": 10000,
+    "quantity": 5,
+    "image" : "src/assets/imagenes/productos/wireless-headphones/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Hesh ANC Wireless Over-Ear",
+    "description": "Hesh ANC es el inigualable audífono con cancelación de ruido para todos los días. Están diseñados con la cantidad justa de funciones adicionales para hacer tu vida un poco más fácil. Con potentes Drivers de 40 mm y una acústica excepcional, Hesh ANC presenta una calidad de audio que se ha refinado durante cuatro generaciones de mejora constante. El sonido es nítido y rico, combinado con la cancelación activa de ruido, brinda el tipo de experiencia de audio cautivadora que esperarías si pagaras el doble del precio.",
+    "price": 10000,
+    "quantity": 5,
+    "image" : "src/assets/imagenes/productos/wireless-headphones/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "PLYR Multi-Platform Wireless Gaming",
+    "description": "PLYR utiliza controladores dinámicos de 50 mm que han sido seleccionados y ajustados por expertos para ofrecer un rango de frecuencia súper amplio y un sonido rico y detallado para juegos, música o medios. Además, Enhanced Sound Perception ajusta el audio a su audición única: captará cada paso, cada disparo distante y cada detalle de audio.",
+    "price": 10000,
+    "quantity": 5,
+    "image" : "src/assets/imagenes/productos/wireless-headphones/6.jpg"
+  }
+]

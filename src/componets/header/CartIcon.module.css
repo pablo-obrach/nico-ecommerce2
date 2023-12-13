@@ -1,0 +1,10 @@
+.cartIcon {
+  cursor: pointer;
+}
+
+.cartIcon img {
+  width: 3%;
+  position: absolute;
+  top: 0.5rem;
+  right: 2%;
+}

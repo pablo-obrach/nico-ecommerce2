@@ -1,0 +1,52 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.titleContainer {
+  padding: 2rem;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.titleContainer > h2 {
+  font-size: 2rem;
+}
+
+.cardSectionsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 6rem;
+  width: 90%;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: rgb(102, 101, 101);
+  transition: 200ms ease-in;
+
+  &:hover {
+    background-color: darkgray;
+  }
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

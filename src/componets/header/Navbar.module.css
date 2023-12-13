@@ -1,0 +1,19 @@
+.navbarLista {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+.navbarItem {
+  cursor: pointer;
+  font-weight: 200;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+}
