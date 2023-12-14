@@ -27,7 +27,7 @@ const CartData = ({ children }) => {
     const index = items.findIndex((i) => i.id === product.id)
 
     if (index > -1) {
-      items[index].cantidad += 1
+      items[index].quantity += 1
     } else {
       items.push({
         ...product,
@@ -42,10 +42,7 @@ const CartData = ({ children }) => {
   }
 
   const total = () => {
-    return cart.items.reduce(
-      (acc, item) => acc + item.precio * item.cantidad,
-      0,
-    )
+    return cart.items.reduce((acc, item) => acc + item.price * item.quantity, 0)
   }
 
   const decreaseProduct = (product) => {
@@ -53,7 +50,23 @@ const CartData = ({ children }) => {
     const index = items.findIndex((i) => i.id === product.id)
 
     if (index > -1) {
-      items[index].cantidad -= 1
+      if (items[index].quantity > 1) {
+        items[index].quantity -= 1
+      }
+    }
+
+    setCart({
+      ...cart,
+      items,
+    })
+  }
+
+  const removeProduct = (product) => {
+    const { items } = cart
+    const index = items.findIndex((i) => i.id === product.id)
+
+    if (index > -1) {
+      items.splice(index, 1)
     }
 
     setCart({
@@ -81,6 +94,7 @@ const CartData = ({ children }) => {
         total,
         decreaseProduct,
         sendOrder,
+        removeProduct,
       }}
     >
       {children}

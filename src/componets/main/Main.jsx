@@ -27,9 +27,6 @@ const Main = () => {
               <img className={styles.imgB} src={headPhone3} alt='headPhone3' />
             </div>
           </div>
-          <Link to={'/test'}>
-            <h2>test</h2>
-          </Link>
         </article>
         <article>
           <div className={styles.cardsContainer}>

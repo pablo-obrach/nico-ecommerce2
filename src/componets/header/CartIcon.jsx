@@ -2,19 +2,19 @@ import carritoimg from '../../assets/imagenes/redes/carrito.svg'
 import styles from './CartIcon.module.css'
 import { useContext } from 'react'
 import MiContexto from '../../context/MiContexto'
+import { Link } from 'react-router-dom'
 
 const CartIcon = () => {
   const { cart } = useContext(MiContexto)
   return (
-    <>
-      <div className={styles.cartIcon}>
-        <img src={carritoimg} alt='carrito' />
-      </div>
-
-      <div>
-        <p>{cart.items.length}</p>
-      </div>
-    </>
+    <div>
+      <Link className={styles.link} to={'/carrito'}>
+        <div className={styles.cartIcon}>
+          <p>{cart.items.length}</p>
+          <img src={carritoimg} alt='carrito' />
+        </div>
+      </Link>
+    </div>
   )
 }
 
