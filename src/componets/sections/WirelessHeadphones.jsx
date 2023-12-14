@@ -7,8 +7,7 @@ import {
   where,
 } from 'firebase/firestore'
 import Products from '../products/Products'
-import Header from '../header/Header'
-import Footer from '../footer/Footer'
+import Wrapper from '../Wrapper/Wrapper'
 //Styles
 import styles from './WirelessHeadphones.module.css'
 
@@ -32,19 +31,19 @@ const WirelessHeadphones = () => {
 
   return (
     <>
-      <Header />
-      <div className={styles.container}>
-        <div className={styles.mainContainer}>
-          {wirelessHeadphones != null ? (
-            wirelessHeadphones.map((product) => (
-              <Products key={product.id} item={product} />
-            ))
-          ) : (
-            <p> No hay Productos Disponibles</p>
-          )}
+      <Wrapper>
+        <div className={styles.container}>
+          <div className={styles.mainContainer}>
+            {wirelessHeadphones != null ? (
+              wirelessHeadphones.map((product) => (
+                <Products key={product.id} item={product} />
+              ))
+            ) : (
+              <p> No hay Productos Disponibles</p>
+            )}
+          </div>
         </div>
-      </div>
-      <Footer />
+      </Wrapper>
     </>
   )
 }

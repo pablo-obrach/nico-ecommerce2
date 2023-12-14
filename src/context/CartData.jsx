@@ -10,7 +10,9 @@ const CartData = ({ children }) => {
       email: 'jhon@doe.com',
       telefono: '123534563',
     },
-    items: [],
+    items: localStorage.getItem('cart')
+      ? JSON.parse(localStorage.getItem('cart'))
+      : [],
     total: 0,
   })
 
@@ -22,7 +24,6 @@ const CartData = ({ children }) => {
 
   const handleBuy = (product) => {
     const { items } = cart
-    console.log(cart)
     const index = items.findIndex((i) => i.id === product.id)
 
     if (index > -1) {

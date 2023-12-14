@@ -2,7 +2,6 @@ import Header from '../header/Header'
 import Footer from '../footer/Footer'
 //Images
 import wirless1 from '../../assets/imagenes/productos/tienda/1.jpg'
-import wirless2 from '../../assets/imagenes/productos/tienda/2.jpg'
 import wirless3 from '../../assets/imagenes/productos/tienda/3.jpg'
 import wirless4 from '../../assets/imagenes/productos/tienda/4.jpg'
 //Styles
@@ -27,20 +26,19 @@ const Tienda = () => {
             </div>
           </Link>
 
-          <div className={styles.card}>
-            <img src={wirless2} alt='Wireless-Earbuds' />
-            <h3>Wireless-Earbuds</h3>
-          </div>
+          <Link className={styles.link} to={'/wiredEarbuds'}>
+            <div className={styles.card}>
+              <img src={wirless3} alt='Wired-Earbuds' />
+              <h3>Wired-Earbuds</h3>
+            </div>
+          </Link>
 
-          <div className={styles.card}>
-            <img src={wirless3} alt='Wired-Earbuds' />
-            <h3>Wired-Earbuds</h3>
-          </div>
-
-          <div className={styles.card}>
-            <img src={wirless4} alt='True-Wireless' />
-            <h3>True-Wireless</h3>
-          </div>
+          <Link className={styles.link} to={'/trueWireless'}>
+            <div className={styles.card}>
+              <img src={wirless4} alt='True-Wireless' />
+              <h3>True-Wireless</h3>
+            </div>
+          </Link>
         </div>
       </div>
 

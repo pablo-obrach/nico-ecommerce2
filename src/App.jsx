@@ -1,9 +1,11 @@
 import Main from './componets/main/main'
 import Tienda from './componets/tienda/Tienda'
-import Test from './componets/sections/Test'
+import ItemDetail from './componets/products/ItemDetail'
 import WirelessHeadphones from './componets/sections/WirelessHeadphones'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import WiredEarbuds from './componets/sections/WiredEarbuds'
+import TrueWireless from './componets/sections/TrueWireless'
 import CartData from './context/CartData'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
             <Route path='/' element={<Main />} />
             <Route path='/tienda' element={<Tienda />} />
             <Route path='/wirelessHeadphone' element={<WirelessHeadphones />} />
-            <Route path='/test' element={<Test />} />
+            <Route path='/wiredEarbuds' element={<WiredEarbuds />} />
+            <Route path='/trueWireless' element={<TrueWireless />} />
+            <Route path='/itemDetail/:productId' element={<ItemDetail />} />
           </Routes>
         </CartData>
       </BrowserRouter>

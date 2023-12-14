@@ -1,0 +1,53 @@
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.imgContainer > img {
+  border-radius: 10px;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1rem;
+}
+
+.title {
+  color: rgb(108, 182, 185);
+  font-weight: 800;
+}
+
+.description {
+  text-wrap: balance;
+}
+
+.price {
+  font-weight: 600;
+  color: rgb(127, 185, 108);
+}
+
+.btnComprar {
+  width: 30%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: rgba(7, 209, 209, 0.737);
+  color: white;
+
+  &:hover {
+    background-color: rgb(7, 209, 209);
+  }
+}
